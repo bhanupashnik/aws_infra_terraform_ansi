@@ -39,12 +39,12 @@ variable "owner" {
 # Instances
 variable "zookeeper_instances" {
   description = "The Zookeeper Instances."
-  default     = { instance_type : "t2.large", volume : 30, count : 3 }
+  default     = { instance_type : "t3.large", volume : 30, count : 3 }
 }
 
 variable "kafka_broker_instances" {
   description = "The Kafka Broker Instances."
-  default     = { instance_type : "t2.large", volume : 30, count : 3 }
+  default     = { instance_type : "t3.large", volume : 30, count : 3 }
 }
 
 variable "rest_proxy_instances" {
